@@ -38,6 +38,13 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
+    - image: /img/coffee.png
+      text: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -69,6 +76,14 @@ testimonials:
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
+  - author: Philipp Trommler
+    quote: >-
+      Kaldi is the place to go if you want the best quality coffee. I love their
+      stance on empowering farmers and transparency.
+  - author: Philipp Trommler
+    quote: >-
+      Kaldi is the place to go if you want the best quality coffee. I love their
+      stance on empowering farmers and transparency.
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
@@ -77,6 +92,20 @@ pricing:
     monthly subscription plans to receive great coffee at your doorstep each
     month. Contact us about more details and payment info.
   plans:
+    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+      items:
+        - 3 lbs of coffee per month
+        - Green or roasted beans"
+        - One or two varieties of beans"
+      plan: Small
+      price: '50'
+    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+      items:
+        - 3 lbs of coffee per month
+        - Green or roasted beans"
+        - One or two varieties of beans"
+      plan: Small
+      price: '50'
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
         - 3 lbs of coffee per month

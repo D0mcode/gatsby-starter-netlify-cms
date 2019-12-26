@@ -8,4 +8,4 @@ featuredimage: /img/jumbotron.jpg
 tags:
   - coffee
 ---
-This was the most amazing project ever. The coffee was so great, I couldn't stop dreaming about it every night.
+This was the most **amazing** project ever. The coffee was so great, I couldn't stop dreaming about it every night.

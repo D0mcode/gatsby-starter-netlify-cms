@@ -5,16 +5,20 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Img from 'gatsby-image'
 
 export const ProjectPostTemplate = ({
   content,
   contentComponent,
   description,
+  galleryImages,
   tags,
   title,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
+
+  console.log(galleryImages)
 
   return (
     <section className="section">
@@ -37,6 +41,16 @@ export const ProjectPostTemplate = ({
                     </li>
                   ))}
                 </ul>
+              </div>
+            ) : null}
+            {galleryImages && galleryImages.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Gallery</h4>
+                <div>
+                  {galleryImages.map(image => (
+                    <Img key={image.childImageSharp.id} fluid={image.childImageSharp.fluid} alt="Some ALT text" />
+                  ))}
+                </div>
               </div>
             ) : null}
           </div>
@@ -72,6 +86,7 @@ const ProjectPost = ({ data }) => {
             />
           </Helmet>
         }
+        galleryImages={post.frontmatter.galleryImages}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -96,6 +111,14 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        galleryImages {
+          childImageSharp {
+            id
+            fluid(maxWidth: 800, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tags
       }
     }

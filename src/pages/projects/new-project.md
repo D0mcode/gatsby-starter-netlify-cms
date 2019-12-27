@@ -26,9 +26,9 @@ Link to [the boss](https://domcode.co).
 
   * Sub item
 
-  List item two
+* List item two
 
-  List item three
+* List item three
 
 ```
 Here's a code block. Pretty fancy!

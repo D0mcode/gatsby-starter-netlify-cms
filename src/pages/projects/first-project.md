@@ -2,11 +2,13 @@
 templateKey: project-post
 title: First project
 date: 2020-12-25T15:04:10.000Z
-description: >-
-  This is the first project on this site.
-  It was a really cool project!
+description: This is the first project on this site. It was a really cool project!
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
+galleryImages:
+  - /img/coffee-gear.png
+  - /img/meeting-space.png
+  - /img/tutorials.png
 tags:
   - South America
   - Women
